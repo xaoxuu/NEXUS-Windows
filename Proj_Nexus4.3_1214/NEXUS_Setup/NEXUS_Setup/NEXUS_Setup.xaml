@@ -1,0 +1,201 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="NEXUS_Setup" x:Class="MainWindow"
+    Title="魔枢安装向导" Height="360" Width="600" WindowStartupLocation="CenterScreen" Topmost="True" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" Foreground="{x:Null}" Icon="Resources/Icon/NEXUS_Box_White.ico">
+    <Grid>
+
+        <Grid x:Name="Background0" Margin="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background0.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Background_Yellow" Margin="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background_Yellow.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Background_Red" Margin="0" Grid.RowSpan="1" Grid.ColumnSpan="1" Visibility="Hidden">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background_Red.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Background_Blue" Margin="0" Grid.RowSpan="1" Grid.ColumnSpan="1" Visibility="Hidden">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background_Blue.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Grid_Background" Margin="0" Background="{x:Null}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="129"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition/>
+                <RowDefinition Height="90"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="Grid_Title" Margin="0" Grid.Column="1" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="动态Logo" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="28" Height="28" Grid.Row="1">
+                    <Button x:Name="Ellipse1" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light">
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse2" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="15"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse3" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="30"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse4" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="45"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse5" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="60"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse6" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="75"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Ellipse Margin="2" Stroke="#FFC8C8C8" StrokeThickness="2"/>
+                </Grid>
+                <TextBox x:Name="Titles" HorizontalAlignment="Stretch" Margin="0" TextWrapping="Wrap" Text="精灵软件     服务条款" VerticalAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="Auto" SelectionBrush="{x:Null}" Padding="0,6" Grid.RowSpan="1" Grid.Row="1" Grid.Column="0" Height="Auto" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow" FontWeight="Bold" TextAlignment="Center"/>
+                <TextBox x:Name="PageNumber" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" VerticalAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Width="Auto" SelectionBrush="{x:Null}" Padding="0,6,5,6" Grid.RowSpan="1" Grid.Row="1" Grid.Column="0" Height="Auto" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow" FontWeight="Bold" TextAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="Grid_Logo" Margin="0,0,-10,0" HorizontalAlignment="Right" Grid.Row="1" Grid.ColumnSpan="2">
+                <TextBox x:Name="Logo0" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AllowDrop="False" Focusable="False" IsHitTestVisible="True" IsTabStop="False" Width="170" Height="170" BorderThickness="0" Cursor="Arrow">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Resources/Background/Logo0.png" Stretch="Uniform"/>
+                    </TextBox.Background>
+                </TextBox>
+            </Grid>
+            <Grid x:Name="Grid_Content" Margin="0" Grid.Column="2" Grid.Row="1">
+                <Grid x:Name="ProgressBar6" Height="20" Margin="0" VerticalAlignment="Bottom">
+                    <Grid x:Name="ProgressBar61" Height="20" Margin="0" VerticalAlignment="Bottom" Visibility="Hidden">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/ProgressBar/ProgressBar61.png"/>
+                        </Grid.Background>
+                    </Grid>
+                    <Grid x:Name="ProgressBar62" Height="20" Margin="0" VerticalAlignment="Bottom" Visibility="Hidden">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/ProgressBar/ProgressBar62.png"/>
+                        </Grid.Background>
+                    </Grid>
+                    <Grid x:Name="ProgressBar63" Height="20" Margin="0" VerticalAlignment="Bottom" Visibility="Hidden">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/ProgressBar/ProgressBar63.png"/>
+                        </Grid.Background>
+                    </Grid>
+                    <Grid x:Name="ProgressBar64" Height="20" Margin="0" VerticalAlignment="Bottom" Visibility="Hidden">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/ProgressBar/ProgressBar64.png"/>
+                        </Grid.Background>
+                    </Grid>
+                    <Grid x:Name="ProgressBar65" Height="20" Margin="0" VerticalAlignment="Bottom" Visibility="Hidden">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/ProgressBar/ProgressBar65.png"/>
+                        </Grid.Background>
+                    </Grid>
+                    <Grid x:Name="ProgressBar66" Height="20" Margin="0" VerticalAlignment="Bottom" Visibility="Hidden">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/ProgressBar/ProgressBar66.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <ScrollViewer Margin="0,20" CanContentScroll="True" VerticalScrollBarVisibility="Hidden" BorderThickness="0" Focusable="False">
+                    <TextBox x:Name="Contents" Margin="0" TextWrapping="Wrap" Text="       本软件可提供源代码仅供学习交流使用，不得用作商业用途。软件内置了一些作者认为好用的精品软件，这些组件并非都是作者开发。由于能力有限，软件只能安装在[D:\Program Files]目录下。点击【接受】开始安装。" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" AllowDrop="False" Focusable="False" IsHitTestVisible="True" IsTabStop="False" BorderThickness="0" Cursor="Arrow"/>
+                </ScrollViewer>
+            </Grid>
+            <Grid x:Name="Grid_Button" Margin="0" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" Width="330" Grid.ColumnSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="ButtonCancel0" Margin="0" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" Padding="0,12" Grid.RowSpan="1" Grid.Row="0" Grid.Column="0" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Resources/Background/Button0.png"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="ButtonCancel1" Margin="0" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" Padding="0,12" Grid.RowSpan="1" Grid.Row="0" Grid.Column="0" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow" Visibility="Hidden">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Resources/Background/Button1.png"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="ButtonCancels" Margin="5,7" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" Padding="0" Grid.RowSpan="1" Grid.Row="0" Grid.Column="0" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Hand" Background="#00000000" Text="拒绝"/>
+                <TextBox x:Name="ButtonOK0" Margin="0" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" Padding="0,12" Grid.RowSpan="1" Grid.Row="0" Grid.Column="2" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Resources/Background/Button0.png"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="ButtonOK1" Margin="0" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" Padding="0,12" Grid.RowSpan="1" Grid.Row="0" Grid.Column="2" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow" Visibility="Hidden">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Resources/Background/Button1.png"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox x:Name="ButtonOKs" Margin="5,7" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" Padding="0" Grid.RowSpan="1" Grid.Row="0" Grid.Column="2" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Hand" Background="#00000000" Text="接受"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
