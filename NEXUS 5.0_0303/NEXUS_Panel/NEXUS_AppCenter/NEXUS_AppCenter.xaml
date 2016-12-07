@@ -1,0 +1,1275 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="NEXUS_AppCenter" mc:Ignorable="d" x:Class="MainWindow"
+    Title="NEXUS_AppCenter" Height="600" Width="1000" Foreground="{x:Null}" WindowStartupLocation="CenterScreen" FontSize="16" AllowsTransparency="True" WindowStyle="None" Icon="Resources/ICON/NEXUS_Box_White.ico" Padding="0" Margin="0" Background="#00000000" BorderThickness="0" ResizeMode="NoResize" SnapsToDevicePixels="True" Left="0" Top="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <Grid Margin="0">
+        <Grid x:Name="Background_Gray" Margin="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background_Gray.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Background_Blue" Margin="0" Visibility="Hidden">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background24.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="117"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="Grid_Main" Margin="18,0,18,18" Grid.Row="1" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <ScrollViewer Margin="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalScrollBarVisibility="Auto" CanContentScroll="True">
+                            <Grid Margin="0,0,0,50" VerticalAlignment="Top">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid Margin="0,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,10,0,5" Grid.ColumnSpan="3" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle Fill="#FFFEC008" Margin="0" StrokeThickness="0" Height="25"/>
+                                        <TextBox TextWrapping="Wrap" Text="精灵软件" Background="#00000000" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle11.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Office.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Office助手" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button11" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle31.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/MediaCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Corel助手" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button12" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle12.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Adobe Photoshop.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe助手" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button13" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle22.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Study.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="精灵考研助手" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button14" Margin="0,9,0,4" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle32.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Games.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="精灵游戏管家" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button15" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Margin="0,5" Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,10,0,5" Grid.ColumnSpan="3" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle Fill="#FFFEC008" Margin="0" StrokeThickness="0" Height="25"/>
+                                        <TextBox TextWrapping="Wrap" Text="装机推荐" Background="#00000000" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle34.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/TuneUp.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="TuneUp" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button21" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle44.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/AVIRA.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="AVIRA" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button22" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle13.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="5" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/7z.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="7z" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button23" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle42.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="1" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Chrome.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Chrome" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button24" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle33.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="-3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Picasa.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Picasa" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button25" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle22.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="6" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/QQPlayer.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="QQ影音" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button26" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle44.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="6" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Music.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="网易云音乐" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button27" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle32.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/QQ.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="QQ" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button28" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Margin="0,5" Grid.Row="2">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,10,0,5" Grid.ColumnSpan="3" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle Fill="#FFFEC008" Margin="0" StrokeThickness="0" Height="25"/>
+                                        <TextBox TextWrapping="Wrap" Text="软件下载站" Background="#00000000" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle12.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="6" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Baidu.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="百度软件中心" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button31" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle22.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="4" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Anxz.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="俺下载" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button32" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle32.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="5" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/IE.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="小众软件" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button33" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle42.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="5" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/IE.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="软件天堂" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button34" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Margin="0,5" Grid.Row="3">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,10,0,5" Grid.ColumnSpan="3" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle Fill="#FFFEC008" Margin="0" StrokeThickness="0" Height="25"/>
+                                        <TextBox TextWrapping="Wrap" Text="自动化专业软件" Background="#00000000" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle44.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Visual Studio.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="C-Free 5.0" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button41" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle34.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Visual Studio.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Visual C++ 6.0" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button42" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle24.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Visual Studio.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Visual Studio 2013" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button43" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle14.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="2" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Visual Studio.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Keil C" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button44" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle43.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Altium Designer" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button45" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle13.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Draw.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Proteus" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button46" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle23.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Draw.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Auto CAD" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button47" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle33.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/MATLAB.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="MATLAB" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button48" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Margin="0,5" Grid.Row="4">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,10,0,5" Grid.ColumnSpan="3" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle Fill="#FFFEC008" Margin="0" StrokeThickness="0" Height="25"/>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe 软件" Background="#00000000" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle11.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Adobe Photoshop.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe PhotoShop" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button51" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle21.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Adobe Bridge.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe Bridge" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button52" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle31.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Adobe Flash.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe Flash" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button53" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle41.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Adobe Audition.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe Audition" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button54" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle12.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe Premiere" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button55" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="2" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle44.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="3" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/Main/Adobe After Effects.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="Adobe After Effect" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button56" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                </Grid>
+                                <Grid Margin="0,5" Grid.Row="5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="5"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid Margin="0,10,0,5" Grid.ColumnSpan="3" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="5"/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Rectangle Fill="#FFFEC008" Margin="0" StrokeThickness="0" Height="25"/>
+                                        <TextBox TextWrapping="Wrap" Text="简单影音处理软件" Background="#00000000" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="1">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle31.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="格式工厂" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button61" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle32.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="美图秀秀" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button62" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle33.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="会声会影" Background="{x:Null}" Foreground="#CC000000" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button63" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                    <Grid Margin="0,5" Grid.Row="1" Grid.Column="4">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Height="60" Margin="0,5,0,0" VerticalAlignment="Center" Width="60" HorizontalAlignment="Center">
+                                            <Ellipse Margin="0" StrokeThickness="0">
+                                                <Ellipse.Fill>
+                                                    <ImageBrush ImageSource="Resources/Circle/Circle34.png" Stretch="Uniform"/>
+                                                </Ellipse.Fill>
+                                            </Ellipse>
+                                            <Ellipse Margin="12" StrokeThickness="0" Fill="White">
+                                                <Ellipse.OpacityMask>
+                                                    <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                                                </Ellipse.OpacityMask>
+                                            </Ellipse>
+                                        </Grid>
+                                        <TextBox TextWrapping="Wrap" Text="IcoFX 2" Background="{x:Null}" Foreground="#FF727272" SelectionBrush="{x:Null}" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0,0,0,3" Margin="1,0,0,2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+                                        <Ellipse x:Name="Button64" Margin="50,10,50,5" StrokeThickness="0" Fill="#00000000" Width="50" Height="50" Cursor="Hand"/>
+                                    </Grid>
+                                </Grid>
+                            </Grid>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+                <Grid Margin="0" Grid.Column="1" Background="White" VerticalAlignment="Top">
+                    <TextBox x:Name="MainTips" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Background="#00000000" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="#FFFEC008" FontSize="18" FontFamily="Microsoft YaHei Light" VerticalContentAlignment="Bottom" Margin="5,10,0,10" Padding="5" BorderThickness="0" MaxWidth="400" MinWidth="180" Text="点击【Goto】展开导航菜单" IsTabStop="False" AllowDrop="False"/>
+                    <Rectangle Fill="#FFFEC008" Margin="0,10" StrokeThickness="0" HorizontalAlignment="Left" Width="5"/>
+                </Grid>
+                <Grid x:Name="Grid_Goto" Margin="0" Grid.Column="1" Background="#FFFEC008">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="0,5,10,0" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FF2196F3" VerticalAlignment="Center" Width="44" Height="44" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/Home.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="Home" Background="{x:Null}" Foreground="#FF2196F3" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="主页" Background="{x:Null}" Foreground="#FF2196F3" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB0" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                    <Grid Margin="0,0,10,0" VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FFFEC008" VerticalAlignment="Center" Width="36" Height="36" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="App Center" Background="{x:Null}" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="软件中心" Background="{x:Null}" Foreground="#FFFEC008" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB1" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                    <Grid Margin="0,0,10,0" VerticalAlignment="Top" Grid.Row="2" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FFCDDC39" VerticalAlignment="Center" Width="36" Height="36" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/MediaCenter.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="Media Center" Background="{x:Null}" Foreground="#FFCDDC39" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="媒体中心" Background="{x:Null}" Foreground="#FFCDDC39" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB2" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                    <Grid Margin="0,0,10,0" VerticalAlignment="Top" Grid.Row="3" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FFFF9800" VerticalAlignment="Center" Width="36" Height="36" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/DataCenter.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="Data Center" Background="{x:Null}" Foreground="#FFFF9800" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="资源中心" Background="{x:Null}" Foreground="#FFFF9800" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB3" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                    <Grid Margin="0,0,10,0" VerticalAlignment="Top" Grid.Row="4" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FF4CAF50" VerticalAlignment="Center" Width="36" Height="36" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/ToolBox.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="Tool Box" Background="{x:Null}" Foreground="#FF4CAF50" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="工具箱" Background="{x:Null}" Foreground="#FF4CAF50" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB4" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                    <Grid Margin="0,0,10,0" VerticalAlignment="Top" Grid.Row="5" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FFFF5722" VerticalAlignment="Center" Width="36" Height="36" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/FeedbackCenter.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="Feedback" Background="{x:Null}" Foreground="#FFFF5722" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="反馈意见" Background="{x:Null}" Foreground="#FFFF5722" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB5" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                    <Grid Margin="0,0,10,0" VerticalAlignment="Top" Grid.Row="6" HorizontalAlignment="Right" Width="180" Height="60">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="33"/>
+                            <RowDefinition Height="27"/>
+                        </Grid.RowDefinitions>
+                        <Rectangle Margin="0,5" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="White" Grid.RowSpan="2"/>
+                        <Ellipse Margin="0" StrokeThickness="0" Fill="#FF2196F3" VerticalAlignment="Center" Width="36" Height="36" HorizontalAlignment="Center" Grid.RowSpan="2">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/SettingCenter.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                        <TextBox TextWrapping="Wrap" Text="Setting Center" Background="{x:Null}" Foreground="#FF2196F3" SelectionBrush="{x:Null}" FontSize="18" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalContentAlignment="Bottom" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Width="130" Height="26"/>
+                        <TextBox TextWrapping="Wrap" Text="设置中心" Background="{x:Null}" Foreground="#FF2196F3" SelectionBrush="{x:Null}" FontSize="12" FontFamily="Microsoft YaHei UI Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" VerticalScrollBarVisibility="Disabled" Padding="0" Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="14" Grid.Row="1"/>
+                        <Rectangle x:Name="ButtonB6" Margin="0" StrokeThickness="0" Grid.ColumnSpan="2" RadiusX="25" RadiusY="25" Fill="#00000000" Height="50" Grid.RowSpan="2" Cursor="Hand"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid x:Name="Background_Title" Margin="15,17,15,0" Grid.RowSpan="2" VerticalAlignment="Top" Height="104">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Resources/Title/Background_Title24.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="Grid_Title" Margin="18,17,18,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="Grid_TitleButton" Margin="0" Grid.Column="2" IsHitTestVisible="True" Height="40" VerticalAlignment="Top">
+                    <Grid Background="#02C8C8C8" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Margin="0">
+                            <Grid x:Name="TitleButton1" Margin="6,10,6,6" Cursor="Hand" Background="#02C8C8C8">
+                                <Grid x:Name="TitleButton1_Rectangle_" Margin="5,2,4,5" Cursor="Hand" Background="#FFFFECB3">
+                                    <Grid.OpacityMask>
+                                        <ImageBrush ImageSource="Resources/Title/Feedback.png"/>
+                                    </Grid.OpacityMask>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid Margin="0" Grid.Column="1">
+                            <Grid x:Name="TitleButton2" Margin="6" Cursor="Hand" Background="#02C8C8C8">
+                                <Grid Margin="0" Cursor="Hand" Width="21" Height="21">
+                                    <Rectangle x:Name="TitleButton2_Rectangle_" Fill="#FFFFECB3" Height="2" Margin="1,0,1,3" RadiusY="1" RadiusX="1" VerticalAlignment="Bottom"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid Margin="0" Grid.Column="2">
+                            <Grid x:Name="TitleButton3" Margin="6" Cursor="Hand" Background="#02C8C8C8">
+                                <Grid Margin="4,0,2,1" VerticalAlignment="Center" HorizontalAlignment="Center" Cursor="Hand" Width="21" Height="21">
+                                    <Rectangle x:Name="TitleButton3_Rectangle_1" Fill="#FFFFECB3" Height="2" Margin="1,0,0,2" RadiusY="1" RadiusX="1" VerticalAlignment="Bottom" RenderTransformOrigin="0,0.5" Width="20">
+                                        <Rectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="-40"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+                                    <Rectangle x:Name="TitleButton3_Rectangle_2" Fill="#FFFFECB3" Height="2" Margin="-3,0,4,2" RadiusY="1" RadiusX="1" VerticalAlignment="Bottom" RenderTransformOrigin="1,0.5" Width="20">
+                                        <Rectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="40"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid Margin="0,3" IsHitTestVisible="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Height="90" Margin="0" VerticalAlignment="Center" Width="90" HorizontalAlignment="Right">
+                        <Ellipse x:Name="Ellipse1" Margin="0" StrokeThickness="2">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="Resources/Circle/Circle00.png" Stretch="Uniform"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="Ellipse2" Margin="12" StrokeThickness="2" Fill="#FFFEC008">
+                            <Ellipse.OpacityMask>
+                                <ImageBrush ImageSource="Resources/AppCenter.png" Stretch="Uniform"/>
+                            </Ellipse.OpacityMask>
+                        </Ellipse>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="1" IsHitTestVisible="True" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="Title1" HorizontalAlignment="Left" Margin="-5,5,0,0" TextWrapping="Wrap" Text="App Center" VerticalAlignment="Top" Background="#00000000" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="White" FontSize="56" FontFamily="Microsoft YaHei Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AllowDrop="False" IsTabStop="False" Focusable="False" IsHitTestVisible="False"/>
+                    <TextBox x:Name="Title2" HorizontalAlignment="Left" Margin="-2,0,0,12" TextWrapping="Wrap" Text="软件中心" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="#FFFFECB3" FontSize="14" FontFamily="Microsoft YaHei Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AllowDrop="False" IsTabStop="False" Focusable="False" IsHitTestVisible="False"/>
+                    <TextBlock x:Name="TitleTips" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" FontFamily="Microsoft YaHei UI Light" Foreground="White" Margin="0,12,120,0" Padding="2,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalAlignment="Right" Grid.Column="2" IsHitTestVisible="False"/>
+                    <Grid Margin="0" MinWidth="200" HorizontalAlignment="Right" VerticalAlignment="Bottom" MinHeight="30" Width="200">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="Button_Goto" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Goto" VerticalAlignment="Top" Background="#00000000" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="White" FontSize="36" FontFamily="Microsoft YaHei Light" VerticalContentAlignment="Bottom" Margin="2,-1,0,0" Padding="5,0,0,0" BorderThickness="0" Height="48" Cursor="Hand" IsTabStop="False" Focusable="False" AllowDrop="False"/>
+                        <Rectangle x:Name="Rectangle1" Fill="White" Margin="0,5" StrokeThickness="0" Width="5" HorizontalAlignment="Left"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Panel", "NEXUS_Panel\NEXUS_Panel.vbproj", "{CE8289D7-2085-4C04-8EB9-595EBBA342FA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_ControlCenter", "NEXUS_ControlCenter\NEXUS_ControlCenter.vbproj", "{292F42F9-44B6-40DA-BD3C-274BA8E3B744}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_DataCenter", "NEXUS_DataCenter\NEXUS_DataCenter.vbproj", "{5BD58A60-E952-4B95-B3B0-52BC3AFD0A09}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_AppCenter", "NEXUS_AppCenter\NEXUS_AppCenter.vbproj", "{D961F53C-0E08-469A-9346-CC9ECE5F4567}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_MediaCenter", "NEXUS_MediaCenter\NEXUS_MediaCenter.vbproj", "{CA0D350B-006F-43AF-895E-70823E835D48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE8289D7-2085-4C04-8EB9-595EBBA342FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8289D7-2085-4C04-8EB9-595EBBA342FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8289D7-2085-4C04-8EB9-595EBBA342FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8289D7-2085-4C04-8EB9-595EBBA342FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{292F42F9-44B6-40DA-BD3C-274BA8E3B744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{292F42F9-44B6-40DA-BD3C-274BA8E3B744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{292F42F9-44B6-40DA-BD3C-274BA8E3B744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{292F42F9-44B6-40DA-BD3C-274BA8E3B744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD58A60-E952-4B95-B3B0-52BC3AFD0A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD58A60-E952-4B95-B3B0-52BC3AFD0A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD58A60-E952-4B95-B3B0-52BC3AFD0A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD58A60-E952-4B95-B3B0-52BC3AFD0A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D961F53C-0E08-469A-9346-CC9ECE5F4567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D961F53C-0E08-469A-9346-CC9ECE5F4567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D961F53C-0E08-469A-9346-CC9ECE5F4567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D961F53C-0E08-469A-9346-CC9ECE5F4567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0D350B-006F-43AF-895E-70823E835D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0D350B-006F-43AF-895E-70823E835D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0D350B-006F-43AF-895E-70823E835D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0D350B-006F-43AF-895E-70823E835D48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

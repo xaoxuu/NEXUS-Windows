@@ -1,0 +1,143 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="NEXUS_Tools_ShutdownTimer" x:Class="MainWindow"
+    Title="魔枢安装向导" Height="306" Width="500" WindowStartupLocation="CenterScreen" Topmost="True" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" Foreground="{x:Null}" Icon="Resources/NEXUS_Expand_White.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="Main" Margin="12" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="背景_灰色" Margin="-12" Grid.RowSpan="2">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Resources/Background_Gray.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="背景_蓝色" Margin="-12" Visibility="Hidden" Grid.RowSpan="2">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Resources/Background_Blue.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="标题" Height="54" VerticalAlignment="Top" Background="#FF2196F3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="标题按钮" Margin="0" IsHitTestVisible="True" VerticalAlignment="Center">
+                    <Grid Background="#02C8C8C8" Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="按钮3" Margin="0" Grid.Column="1">
+                            <Grid x:Name="标题按钮3" Margin="6" Cursor="Hand" Background="#00000000">
+                                <Grid Margin="4,0,2,1" VerticalAlignment="Center" HorizontalAlignment="Center" Cursor="Hand" Width="21" Height="21">
+                                    <Rectangle x:Name="标题按钮3_Rectangle_1" Fill="#FFBBDEFB" Height="2" Margin="1,0,0,2" RadiusY="1" RadiusX="1" VerticalAlignment="Bottom" RenderTransformOrigin="0,0.5" Width="20">
+                                        <Rectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="-40"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+                                    <Rectangle x:Name="标题按钮3_Rectangle_2" Fill="#FFBBDEFB" Height="2" Margin="-3,0,4,2" RadiusY="1" RadiusX="1" VerticalAlignment="Bottom" RenderTransformOrigin="1,0.5" Width="20">
+                                        <Rectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="40"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <TextBox x:Name="页眉" Margin="10,0" TextWrapping="Wrap" Text="定时关机" BorderThickness="0" FontSize="22" Background="#00000000" BorderBrush="{x:Null}" Foreground="White" SelectionBrush="{x:Null}" FontFamily="Microsoft YaHei UI Light" Cursor="Arrow" Focusable="False" IsReadOnly="True" Padding="0" IsTabStop="False" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLines="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="内容" Margin="0" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="文本" Margin="0" Grid.ColumnSpan="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ScrollViewer Margin="0" CanContentScroll="True" VerticalScrollBarVisibility="Hidden" BorderThickness="0" Focusable="False">
+                        <Grid VerticalAlignment="Top" Height="228">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid Margin="10" Cursor="Arrow" Background="#00000000">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid Margin="0">
+                                    <TextBlock x:Name="Text_B11" Margin="10,0,0,0" TextWrapping="Wrap" FontSize="18" TextDecorations="{x:Null}" Foreground="#FF2397F3" Cursor="Arrow" VerticalAlignment="Center" FontFamily="Microsoft YaHei Light" HorizontalAlignment="Left" Height="27"><Run Language="zh-cn" Text="你希望多久后关机？"/></TextBlock>
+                                </Grid>
+                                <Grid Margin="0" Grid.Row="1">
+                                    <Grid x:Name="Grid_B12" Margin="10,5,0,5">
+                                        <TextBlock x:Name="文本框_定时关机提示" Margin="0" TextWrapping="Wrap" FontSize="18" TextDecorations="{x:Null}" Foreground="#FF2397F3" Cursor="Arrow" FontFamily="Microsoft YaHei Light" Padding="0" VerticalAlignment="Center"><Run Language="zh-cn" Text="电脑将在                       多久后关机"/></TextBlock>
+                                        <TextBlock Margin="77,0,0,3" TextWrapping="Wrap" FontSize="14" TextDecorations="{x:Null}" Foreground="#FFC8C8C8" Cursor="No" FontFamily="汉仪细等线简" IsHitTestVisible="False" Height="17" VerticalAlignment="Bottom" Padding="1,0,0,0" Grid.IsSharedSizeScope="False" HorizontalAlignment="Left" Width="115"><Run Text="__________________________"/><Run Text="_________"/></TextBlock>
+                                        <TextBox x:Name="文本框_定时关机" Margin="77,0,0,0" TextWrapping="Wrap" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="24" FontFamily="Microsoft JhengHei Light" Foreground="#FFFF5722" HorizontalAlignment="Left" Width="115" Padding="0" MaxLines="1" TextAlignment="Center" BorderThickness="0" SelectionBrush="#FFFFCCBC" VerticalAlignment="Center"/>
+                                    </Grid>
+                                    <Grid x:Name="开关按钮" Cursor="Hand" Margin="0,0,10,0" VerticalAlignment="Center" Height="22" HorizontalAlignment="Right" Width="40">
+                                        <Grid x:Name="开关_关" Cursor="Hand">
+                                            <Rectangle Margin="1,0" StrokeThickness="0" Fill="#FFB6B6B6" VerticalAlignment="Center" Height="10" RadiusX="5" RadiusY="5"/>
+                                            <Ellipse Fill="#FF9E9E9E" HorizontalAlignment="Left" Height="20" Stroke="White" StrokeThickness="2" VerticalAlignment="Center" Width="20"/>
+                                        </Grid>
+                                        <Grid x:Name="开关_开" Cursor="Hand" Margin="0" d:IsHidden="True" Visibility="Hidden">
+                                            <Rectangle Margin="1,0" StrokeThickness="0" Fill="#FFBBDEFB" VerticalAlignment="Center" Height="10" RadiusX="5" RadiusY="5"/>
+                                            <Ellipse Fill="#FF3C99F8" HorizontalAlignment="Right" Height="20" Stroke="White" StrokeThickness="2" VerticalAlignment="Center" Width="20" Margin="0,1"/>
+                                        </Grid>
+                                    </Grid>
+                                </Grid>
+                                <Grid Margin="0" Grid.Row="2">
+                                    <TextBox x:Name="按钮_定时关" Margin="10,5,0,5" TextWrapping="Wrap" Text="撤销" BorderThickness="1" FontSize="18" Background="{x:Null}" BorderBrush="#FFC8C8C8" Foreground="#FF787878" SelectionBrush="{x:Null}" FontFamily="Microsoft YaHei Light" Cursor="Hand" Focusable="False" IsReadOnly="True" Padding="0" IsTabStop="False" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLines="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="120"/>
+                                    <TextBox x:Name="按钮_定时开" Margin="0,5,10,5" TextWrapping="Wrap" Text="确定" BorderThickness="1" FontSize="18" Background="{x:Null}" BorderBrush="#FFC8C8C8" Foreground="#FF787878" SelectionBrush="{x:Null}" FontFamily="Microsoft YaHei Light" Cursor="Hand" Focusable="False" IsReadOnly="True" Padding="0" IsTabStop="False" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLines="1" VerticalAlignment="Center" HorizontalAlignment="Right" Width="120"/>
+                                    <Button x:Name="Button_确定" Content="确定" HorizontalAlignment="Right" Margin="0,0,135,0" Width="120" Background="#FFB49393" Foreground="#FF727272" IsDefault="True" IsTabStop="False"/>
+                                </Grid>
+                            </Grid>
+                            <TextBox TextWrapping="Wrap" Text="只能输入数字（小数点也可以）。&#xD;&#xA;小于10的按小时计算大于等于10的数字按分钟计算。&#xD;&#xA;重新输入数字可以重新计时。&#xD;&#xA;&#xD;&#xA;" Background="#00000000" Foreground="#FF727272" SelectionBrush="Black" FontSize="14" FontFamily="Microsoft YaHei UI Light" BorderBrush="Black" BorderThickness="0" Cursor="Arrow" AllowDrop="False" Focusable="False" IsTabStop="False" Grid.Column="0" Padding="10,10,10,0" Grid.Row="1"/>
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
+            <Grid x:Name="页脚" RenderTransformOrigin="0.5,0.5" Margin="0" VerticalAlignment="Bottom" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid Height="60" Margin="0" VerticalAlignment="Top" Width="60" HorizontalAlignment="Right" Cursor="Hand">
+                    <Ellipse Margin="0" StrokeThickness="0">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="Resources/Circle32.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Rectangle Fill="White" HorizontalAlignment="Center" Height="34" Margin="0" RadiusY="1" RadiusX="1" StrokeThickness="0" VerticalAlignment="Center" Width="4"/>
+                    <Rectangle Fill="White" HorizontalAlignment="Center" Height="4" Margin="0" RadiusY="1" RadiusX="1" StrokeThickness="0" VerticalAlignment="Center" Width="34"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

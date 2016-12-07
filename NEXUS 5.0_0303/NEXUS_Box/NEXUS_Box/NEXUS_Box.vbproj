@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE8289D7-2085-4C04-8EB9-595EBBA342FA}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NEXUS_Box</RootNamespace>
+    <AssemblyName>NEXUS_Box</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NEXUS_Box.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NEXUS_Box.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ICON\NEXUS_Box_Blue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="NEXUS_Box.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NEXUS_Box.xaml.vb">
+      <DependentUpon>NEXUS_Box.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FolderSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cleanup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NEXUS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\TuneUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\7z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AVIRA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Picasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\QQPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Foobar2000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Office.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Baidu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Anxz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Wordpad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\IE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Maple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\App.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\System.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\YouTube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Calculator.png" />
+    <Resource Include="Resources\Task.png" />
+    <Resource Include="Resources\Virtualdriver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Landskape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\WIFI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Firewall.png" />
+    <Resource Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Devices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Diver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MagicSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BitLocker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ControlPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NEXUS_MINI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ICON\NEXUS_Box_Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Apple.png" />
+    <Resource Include="Resources\Ubuntu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Windows8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Groups.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MATLAB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Visual Studio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Keil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Altium Designer.png" />
+    <Resource Include="Resources\Protel.png" />
+    <Resource Include="Resources\Proteus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Box3\Adobe After Effects.png" />
+    <Resource Include="Resources\Box3\Adobe Audition.png" />
+    <Resource Include="Resources\Box3\Adobe Bridge.png" />
+    <Resource Include="Resources\Box3\Adobe Flash.png" />
+    <Resource Include="Resources\Box3\Adobe Illustrator.png" />
+    <Resource Include="Resources\Box3\Adobe Photoshop.png" />
+    <Resource Include="Resources\Box3\Adobe Premiere Pro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Box8\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Box6\Siri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Title\Feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HomePage\Shutdown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HomePage\Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Setting\Outlook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background_Tips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Setting\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ICON\NEXUS_Box_White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ICON\NEXUS_Search_White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Title\Title0.png" />
+    <Resource Include="Resources\Title\Title1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Class\Class1.png" />
+    <Resource Include="Resources\Class\Class2.png" />
+    <Resource Include="Resources\Class\Class3.png" />
+    <Resource Include="Resources\Class\Class4.png" />
+    <Resource Include="Resources\Class\Class5.png" />
+    <Resource Include="Resources\Class\Class6.png" />
+    <Resource Include="Resources\Class\Class7.png" />
+    <Resource Include="Resources\Class\Class8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\HomePage\课表.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background_Blue.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
