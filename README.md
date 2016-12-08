@@ -1,7 +1,7 @@
 # NEXUS「魔枢」
 
 
-![screenshot](/Volumes/Macintosh HD/Developer/Titan Studio/Project NEXUS/NEXUS/resources/images/screenshot.png)
+![screenshot](resources/images/screenshot.png)
 
 
 
