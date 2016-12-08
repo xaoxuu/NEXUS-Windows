@@ -1,0 +1,333 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="Tips_Setup" x:Class="MainWindow"
+    Title="魔枢安装向导" Height="300" Width="500" WindowStartupLocation="CenterScreen" Topmost="True" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" Foreground="{x:Null}" Icon="Resources/Icon/Tips_Logo.ico">
+    <Window.Resources>
+        <Storyboard x:Key="开始动画">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Logo0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-90"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-50.775111111111123"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="Logo0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="130.50824691358025"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="170">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Height)" Storyboard.TargetName="Logo0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="130.50824691358025"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="170">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Logo0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="页脚">
+                <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,-60"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:6" Value="0,0,0,-60"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:8" Value="0,0,0,1">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseOut" Oscillations="1" Springiness="5"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="Contents">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuarticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="旋转Logo" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="动态Logo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="隐藏按钮">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="页脚">
+                <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,1"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="0,0,0,-50">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="显示按钮">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="页脚">
+                <EasingThicknessKeyFrame KeyTime="0" Value="0,0,0,-50"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1.5" Value="0,0,0,1">
+                    <EasingThicknessKeyFrame.EasingFunction>
+                        <ElasticEase EasingMode="EaseOut" Oscillations="1" Springiness="5"/>
+                    </EasingThicknessKeyFrame.EasingFunction>
+                </EasingThicknessKeyFrame>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="进度条" RepeatBehavior="2x">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="ellipse11">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="10,0,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="0:0:3" Value="450,0,0,0" KeySpline="0.3,0.91,0.7,0.12"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="ellipse12">
+                <EasingThicknessKeyFrame KeyTime="0:0:0.1" Value="20,0,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="0:0:2.9" Value="460,0,0,0" KeySpline="0.3,0.91,0.7,0.12"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="ellipse13">
+                <EasingThicknessKeyFrame KeyTime="0" Value="30,0,0,0"/>
+                <SplineThicknessKeyFrame KeyTime="0:0:2.8" Value="470,0,0,0" KeySpline="0.3,0.91,0.7,0.12"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource 开始动画}"/>
+            <BeginStoryboard Storyboard="{StaticResource 旋转Logo}"/>
+            <BeginStoryboard Storyboard="{StaticResource 进度条}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+
+        <Grid x:Name="Background_Gray" Margin="0" Grid.RowSpan="1" Grid.ColumnSpan="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background_Gray.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Background_Blue" Margin="0" Grid.RowSpan="1" Grid.ColumnSpan="1" Visibility="Hidden">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Background/Background_Blue.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Grid_Background" Margin="9" Background="#FFF8F8F8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="54"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="Grid_Title" Margin="0" Grid.ColumnSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBox x:Name="Titles" HorizontalAlignment="Stretch" Margin="0" TextWrapping="Wrap" Text="AESIR软件     服务条款  " VerticalAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="Auto" SelectionBrush="{x:Null}" Padding="0,6" Grid.RowSpan="1" Grid.Column="0" Height="Auto" Background="#FFEEEEF2" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow" FontWeight="Bold" TextAlignment="Center"/>
+                <Grid x:Name="动态Logo" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="28" Height="28" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Button x:Name="Ellipse1" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light">
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse2" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="15"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse3" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="30"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse4" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="45"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse5" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="60"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Button x:Name="Ellipse6" Content="Esc" Margin="5" Background="#FFC8C8C8" BorderBrush="{x:Null}" Foreground="{x:Null}" BorderThickness="0" IsCancel="True" FontFamily="Microsoft JhengHei Light" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                        <Button.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="75"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Button.RenderTransform>
+                        <Button.OpacityMask>
+                            <ImageBrush ImageSource="Resources/TrendsLogo/NEXUS_MINI.png" Stretch="Uniform"/>
+                        </Button.OpacityMask>
+                    </Button>
+                    <Ellipse x:Name="Ellipse0" Margin="2" Stroke="#FFC8C8C8" StrokeThickness="2"/>
+                </Grid>
+                <TextBox x:Name="PageNumber" HorizontalAlignment="Right" Margin="0,0,10,0" TextWrapping="Wrap" VerticalAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Width="Auto" SelectionBrush="{x:Null}" Padding="0,6,5,6" Grid.RowSpan="1" Grid.Column="0" Height="Auto" Background="{x:Null}" BorderThickness="0" AllowDrop="False" Focusable="False" IsTabStop="False" Cursor="Arrow" FontWeight="Bold" TextAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="Grid_Logo" HorizontalAlignment="Right" Grid.Row="1" Width="150" Margin="0,0,0,10">
+                <TextBox x:Name="Logo0" TextWrapping="Wrap" BorderBrush="{x:Null}" Foreground="{x:Null}" FontFamily="Microsoft JhengHei Light" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" AllowDrop="False" Focusable="False" IsHitTestVisible="True" IsTabStop="False" Width="170" Height="170" BorderThickness="0" Cursor="Arrow" HorizontalAlignment="Left" Margin="-10,0,0,0" SelectionBrush="{x:Null}" Background="#FFC8C8C8" RenderTransformOrigin="0.5,0.5">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                    <TextBox.OpacityMask>
+                        <ImageBrush ImageSource="Resources/Background/Logo0.png" Stretch="Uniform"/>
+                    </TextBox.OpacityMask>
+                </TextBox>
+            </Grid>
+            <Grid x:Name="Grid_Content" Margin="0,0,0,10" Grid.Column="1" Grid.Row="1">
+                <TextBox x:Name="Contents" Margin="0" TextWrapping="Wrap" Text="请认真阅读以下内容：&#xA;       本软件可提供源代码仅供学习交流使用，不得用作商业用途。软件内置了一些作者认为好用的精品软件，这些组件并非作者开发。&#xA;       对软件有任何疑问可以在搜索栏里输入【帮助】或者【Help】以查看使用说明。" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF787878" FontFamily="Microsoft JhengHei Light" FontSize="16" AllowDrop="False" Focusable="False" IsHitTestVisible="True" IsTabStop="False" BorderThickness="0" Cursor="Arrow" VerticalContentAlignment="Center"/>
+            </Grid>
+            <Grid Margin="0,0,0,20" VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.Row="1" Height="26" Background="#00000000" Grid.RowSpan="2">
+                <Ellipse x:Name="ellipse11" Fill="#FFC8C8C8" HorizontalAlignment="Left" Height="5" Margin="10,0,0,0" StrokeThickness="0" VerticalAlignment="Center" Width="5"/>
+                <Ellipse x:Name="ellipse12" Fill="#FFC8C8C8" HorizontalAlignment="Left" Height="5" Margin="20,0,0,0" StrokeThickness="0" VerticalAlignment="Center" Width="5"/>
+                <Ellipse x:Name="ellipse13" Fill="#FFC8C8C8" HorizontalAlignment="Left" Height="5" Margin="30,0,0,0" StrokeThickness="0" VerticalAlignment="Center" Width="5"/>
+                <Grid Height="30" Margin="0" VerticalAlignment="Bottom" Background="#00000000" d:IsHidden="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Margin="0,0,-3,0" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Fill="#FFF8F8F8"/>
+                    <Rectangle HorizontalAlignment="Left" Margin="0" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Width="40" Height="40" Grid.Column="1">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFF8F8F8" Offset="0"/>
+                                <GradientStop Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle HorizontalAlignment="Right" Margin="0,0,-0.001,0" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Width="40" Height="40" Grid.Column="3">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFF8F8F8" Offset="0"/>
+                                <GradientStop Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Margin="-3,0,0,0" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Fill="#FFF8F8F8" Grid.Column="4"/>
+                </Grid>
+            </Grid>
+            <Grid x:Name="页脚" RenderTransformOrigin="0.5,0.5" Margin="0" VerticalAlignment="Bottom" Grid.Row="2" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid x:Name="拓展按钮" Margin="0,0,0,20" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle x:Name="拓展按钮_Rectangle_" Margin="0" RadiusY="15" RadiusX="15" Grid.ColumnSpan="2" Stroke="Gainsboro" Fill="Gainsboro" StrokeThickness="5"/>
+                    <Grid x:Name="页脚按钮1" Margin="2,2,1,2" RenderTransformOrigin="0.5,0.5" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#00000000">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                <SkewTransform AngleY="0" AngleX="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <TextBox x:Name="页脚按钮1_TextBox_" Margin="5,0" TextWrapping="Wrap" Text="拒绝" Background="#00000000" Foreground="#FF787878" SelectionBrush="{x:Null}" FontSize="20" FontFamily="Microsoft JhengHei Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Hand" AllowDrop="False" Focusable="False" IsTabStop="False" Grid.Column="0" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="35,0"/>
+                    </Grid>
+                    <Grid x:Name="页脚按钮2" Margin="1,2,2,2" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#00000000">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleY="1" ScaleX="1"/>
+                                <SkewTransform AngleY="0" AngleX="0"/>
+                                <RotateTransform Angle="0"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <TextBox x:Name="页脚按钮2_TextBox_" Margin="5,0" TextWrapping="Wrap" Text="接受" Background="#00000000" Foreground="#FF787878" SelectionBrush="{x:Null}" FontSize="20" FontFamily="Microsoft JhengHei Light" BorderBrush="{x:Null}" BorderThickness="0" Cursor="Hand" AllowDrop="False" Focusable="False" IsTabStop="False" Grid.Column="0" VerticalContentAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="35,0"/>
+                    </Grid>
+                    <Rectangle Margin="149,0,0,0" Grid.ColumnSpan="2" Fill="White" StrokeThickness="0" Width="1" HorizontalAlignment="Left"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
