@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{544260F8-0BAF-4384-8BAE-AEF1C00C06D9}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NEXUS_ToolBox</RootNamespace>
+    <AssemblyName>NEXUS_ToolBox</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NEXUS_ToolBox.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NEXUS_ToolBox.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ICON\NEXUS_Box_Blue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="NEXUS_ToolBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NEXUS_ToolBox.xaml.vb">
+      <DependentUpon>NEXUS_ToolBox.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+    <None Include="Resources\Circle\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NEXUS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NEXUS_MINI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ICON\NEXUS_Box_Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background_Tips.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ICON\NEXUS_Box_White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ICON\NEXUS_Search_White.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Title\Feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Title\Title0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Title\Title1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AppCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Circle\Circle21.png" />
+    <Resource Include="Resources\Circle\Circle22.png" />
+    <Resource Include="Resources\Circle\Circle23.png" />
+    <Resource Include="Resources\Circle\Circle24.png" />
+    <Resource Include="Resources\Circle\Circle31.png" />
+    <Resource Include="Resources\Circle\Circle32.png" />
+    <Resource Include="Resources\Circle\Circle33.png" />
+    <Resource Include="Resources\Circle\Circle34.png" />
+    <Resource Include="Resources\Circle\Circle41.png" />
+    <Resource Include="Resources\Circle\Circle42.png" />
+    <Resource Include="Resources\Circle\Circle43.png" />
+    <Resource Include="Resources\Circle\Circle44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Title\Background_Title22.png" />
+    <Resource Include="Resources\Title\Background_Title23.png" />
+    <Resource Include="Resources\Title\Background_Title24.png" />
+    <Resource Include="Resources\Title\Background_Title34.png" />
+    <Resource Include="Resources\Title\Background_Title43.png" />
+    <Resource Include="Resources\Title\Background_Title44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Circle\Circle11.png" />
+    <Resource Include="Resources\Circle\Circle12.png" />
+    <Resource Include="Resources\Circle\Circle13.png" />
+    <Resource Include="Resources\Circle\Circle14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Background\Background22.png" />
+    <Resource Include="Resources\Background\Background23.png" />
+    <Resource Include="Resources\Background\Background24.png" />
+    <Resource Include="Resources\Background\Background34.png" />
+    <Resource Include="Resources\Background\Background43.png" />
+    <Resource Include="Resources\Background\Background44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SettingCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MediaCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FeedbackCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DataCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ToolBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Maple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Virtualdriver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Windows8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Firewall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\UAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Computer.png" />
+    <Resource Include="Resources\Main\FolderSearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\MagicSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Devices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Circle\Circle00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Main\Boostmaster.png" />
+    <Resource Include="Resources\Main\Cleanmaster.png" />
+    <Resource Include="Resources\Main\Datarecovery.png" />
+    <Resource Include="Resources\Main\DirectX.png" />
+    <Resource Include="Resources\Main\DiskGenius.png" />
+    <Resource Include="Resources\Main\DriverGenius.png" />
+    <Resource Include="Resources\Main\Faronics_DFS.png" />
+    <Resource Include="Resources\Main\Fences.png" />
+    <Resource Include="Resources\Main\Filemaster.png" />
+    <Resource Include="Resources\Main\GHOST.png" />
+    <Resource Include="Resources\Main\KMS.png" />
+    <Resource Include="Resources\Main\PCdoctor.png" />
+    <Resource Include="Resources\Main\IObitToolBox.png" />
+    <Resource Include="Resources\Main\Winmaster.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

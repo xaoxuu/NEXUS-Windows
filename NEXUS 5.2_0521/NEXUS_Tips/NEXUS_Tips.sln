@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Tips_Version", "NEXUS_Tips_Version\NEXUS_Tips_Version.vbproj", "{F5A9523E-179D-4C3B-A9E4-BBD00491556C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Tips_ShutdownTimer", "NEXUS_Tips_ShutdownTimer\NEXUS_Tips_ShutdownTimer.vbproj", "{E6D5E2E0-A170-4C92-A1E2-C088024275EF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Tips_Error", "NEXUS_Tips_Error\NEXUS_Tips_Error.vbproj", "{2A244105-B7C8-4AB5-B432-51E7B547DAF1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Tips_Setup", "NEXUS_Tips_Setup\NEXUS_Tips_Setup.vbproj", "{E5219AD4-EA4C-4E31-ABCC-0D38D2448858}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Help", "NEXUS_Tips_Help\NEXUS_Help.vbproj", "{C25F89BE-7466-42A5-B4C0-AFB35FEC01AC}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NEXUS_Tips_InstallToolBox", "NEXUS_Tips_InstallToolBox\NEXUS_Tips_InstallToolBox.vbproj", "{1F4DAACD-573A-4574-AB92-BE1BCF195D8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A9523E-179D-4C3B-A9E4-BBD00491556C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A9523E-179D-4C3B-A9E4-BBD00491556C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A9523E-179D-4C3B-A9E4-BBD00491556C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A9523E-179D-4C3B-A9E4-BBD00491556C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D5E2E0-A170-4C92-A1E2-C088024275EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D5E2E0-A170-4C92-A1E2-C088024275EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D5E2E0-A170-4C92-A1E2-C088024275EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D5E2E0-A170-4C92-A1E2-C088024275EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A244105-B7C8-4AB5-B432-51E7B547DAF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A244105-B7C8-4AB5-B432-51E7B547DAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A244105-B7C8-4AB5-B432-51E7B547DAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A244105-B7C8-4AB5-B432-51E7B547DAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5219AD4-EA4C-4E31-ABCC-0D38D2448858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5219AD4-EA4C-4E31-ABCC-0D38D2448858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5219AD4-EA4C-4E31-ABCC-0D38D2448858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5219AD4-EA4C-4E31-ABCC-0D38D2448858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C25F89BE-7466-42A5-B4C0-AFB35FEC01AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C25F89BE-7466-42A5-B4C0-AFB35FEC01AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C25F89BE-7466-42A5-B4C0-AFB35FEC01AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C25F89BE-7466-42A5-B4C0-AFB35FEC01AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F4DAACD-573A-4574-AB92-BE1BCF195D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F4DAACD-573A-4574-AB92-BE1BCF195D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F4DAACD-573A-4574-AB92-BE1BCF195D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F4DAACD-573A-4574-AB92-BE1BCF195D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
