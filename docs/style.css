@@ -341,6 +341,9 @@ button{
 	outline: none!important;
 }
 
+.icon-spacer{
+	margin-right:5px;
+}
 .btn .caret{
 	margin:0 0 0 5px}.dropdown a .caret{
 	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
@@ -410,6 +413,7 @@ iframe{
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-family:"Ubuntu";
+	font-weight:400;
 }
 .container{
 	max-width:1170px;
@@ -588,6 +592,12 @@ h3{
 }
 .ltc-dodger-blue:hover{
 	color:#2382cc!important;
+}
+/* Icon colour styles */
+
+.icon-white{
+	color:#ffffff!important;
+	border-color:#ffffff!important;
 }
 
 /* Bloc image backgrounds */
