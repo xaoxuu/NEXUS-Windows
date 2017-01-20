@@ -1,8 +1,4 @@
-![](resources/icon/header.png)
-
-
-# NEXUS「魔枢」
-
+![](resources/icons/header.png)
 
 
 **——Windows系统万能工具箱，电脑小白必备**
