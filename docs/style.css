@@ -188,18 +188,16 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 .navbar-brand{
 	height:auto;
-	padding:15px 15px;
+	padding:3px 15px;
 	font-size:25px;
 	font-weight:normal;
 	font-weight:600;
+	line-height:44px;
 }
 .navbar-brand img{
 	max-height: 200px;
 	margin: 0 5px 0 0;
 	display:inline;
-}
-.navbar-brand{
-	padding: 15px 15px;
 }
 .navbar .nav{
 	padding-top: 2px;
@@ -249,7 +247,7 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 		color:#484848;
 	}
 	.nav-invert .site-navigation{
-		left:20px;
+		left:0;
 		right:0;
 	}
 	.nav-center{
@@ -422,10 +420,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size:28px;
 	text-align:center;
 	font-weight:lighter;
-}
-.d{
-}
-.class-downloads{
 }
 .device-bloc-text-vc{
 	font-size:50px;
@@ -622,7 +616,7 @@ h3{
 		max-width:80%
     }
 	.nav-center.navbar .nav{
-		max-width:100%}
+		max-width:100%
     }
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {.b-parallax{background-attachment:scroll;}}
@@ -718,8 +712,7 @@ h3{
     }
     .navbar-brand img{
         max-height: 40px;
-        width:auto;
-        margin: -10px 10px 0 0;    
+        width:auto;   
     }
     .nav-invert .navbar-header{
         float: none;
@@ -784,7 +777,40 @@ h3{
 	margin-top:10%;
 }
  }
-
+/* Drop Down Navigation */
+@media (min-width: 767px) and (max-width: 768px){
+	
+.mini-nav .special-dropdown-nav .site-navigation{
+	display: block;
+	position: absolute;
+	top: 80%;
+	z-index: 1000;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,.15);
+	border-radius: 4px;
+	-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.mini-nav .special-dropdown-nav .site-navigation li{
+	width:100%;
+}
+.special-dropdown-nav.collapsing{
+	transition: height 0.001s;
+}
+.mini-nav .special-dropdown-nav .site-navigation li a{
+	color: rgba(0,0,0,.6);
+}
+ }
 @media (max-width: 420px){
 	.blocs-mobile-signup-text{
 	text-align:center;
