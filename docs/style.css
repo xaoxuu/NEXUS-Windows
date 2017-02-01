@@ -42,11 +42,37 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 .bloc-lg{
 	padding:100px 50px;
 }
-.bloc-md{
-	padding:50px;
-}
 .bloc-sm{
 	padding:20px 50px;
+}
+
+
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-repeat{
+	background:repeat;
+}
+
+
+/* Background Textures */
+
+.bloc-bg-texture::before{
+	content:"";
+	background-size: 2px 2px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+}
+.texture-darken::before{
+	background: rgba(0,0,0,0.5);
 }
 
 
@@ -135,12 +161,6 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
-
-/* Row Margin Offsets */
-
-.voffset{
-	margin-top:30px;
-}
 /* Dividers */
 
 .b-divider{
@@ -150,8 +170,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 
 /* Bloc text custom styling */
 
-#bloc-1 h5{
-	line-height: 24px;
+#bloc-1 h1{
+	font-size: 64px;
 }
 #bloc-2 h5{
 	line-height: 24px;
@@ -168,14 +188,14 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 #bloc-6 h5{
 	line-height: 24px;
 }
-#bloc-8 h4{
+#bloc-7 h4{
 	line-height: 28px;
 }
-#bloc-8 h5{
+#bloc-7 h5{
 	font-size: 14px;
 	line-height: 22px;
 }
-#bloc-8 h5{
+#bloc-7 h5{
 	line-height: 24px;
 }
 
@@ -309,6 +329,9 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-sm{
 	margin-top:10px;
 	margin-bottom:5px;
@@ -316,6 +339,10 @@ nav .caret{
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
+}
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
 }
 
 /* = Buttons
@@ -337,6 +364,14 @@ button{
 	outline: none!important;
 }
 
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
 .icon-spacer{
 	margin-right:5px;
 }
@@ -382,6 +417,43 @@ button{
 iframe{
 	border:0;
 }
+/* = Carousel
+-------------------------------------------------------------- */
+
+.carousel{
+	display:inline-block;
+	vertical-align:bottom;
+}
+.full-width-bloc .carousel{
+	width:100%;
+}
+.carousel .item img{
+	margin-right:auto;
+	margin-left:auto;
+}
+.carousel-control span{
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+	display: inline-block;
+}
+.carousel-control{
+	color:#FFF!important;
+	text-shadow: none;
+}
+.carousel-indicators li{
+	margin: 0 4px;
+}
+.carousel-indicators .active{
+	margin: 0 4px -1px;
+}
+.carousel-control.left span{
+	margin-left:-15px;
+}
+
+.no-shadows .carousel-control.left, .no-shadows .carousel-control.right{
+	background-image: none;
+}
 
 
 /* ScrollToTop button */
@@ -402,6 +474,29 @@ iframe{
 .showScrollTop{
 	font-size: 14px;
 	opacity: 1;
+}
+/* = MacBook Devices
+-------------------------------------------------------------- */
+
+.blocsapp-device-mb{
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	display: block;
+	width:100%;
+	height:auto;
+	padding: 3.6% 15% 7.5%;
+}
+.blocsapp-device-mb img{
+	width:100%;
+	height:auto;
+	margin: 0 auto;
+}
+/* = MacBook Space Grey
+-------------------------------------------------------------- */
+
+.mb-space-grey{
+	background-image:url("img/Apple-Macbook-Space-Grey.png");
 }
 
 /* = Custom Styling
@@ -556,26 +651,38 @@ h3{
 .bgc-white{
 	background-color:#ffffff;
 }
-.bgc-dodger-blue{
-	background-color:#2CA3FF;
+.bgc-black{
+	background-color:#000003;
 }
 /* Text colour styles */
 
-.tc-dodger-blue{
-	color:#2CA3FF!important;
-}
 .tc-white{
 	color:#ffffff!important;
 }
+.tc-dodger-blue{
+	color:#2CA3FF!important;
+}
 /* Button colour styles */
 
-.btn-dodger-blue{
-	background:#2CA3FF;
+.btn-beaver{
+	background:#A2846B;
 	color:#FFFFFF!important;
 }
-.btn-dodger-blue:hover{
-	background:#2382cc;
+.btn-beaver:hover{
+	background:#826a56;
 	color:#FFFFFF!important;
+}
+.btn-pale-silver{
+	background:#C2BBB3;
+	color:rgba(0,0,0,.5)!important;
+}
+.btn-pale-silver:hover{
+	background:#9b968f;
+	color:rgba(0,0,0,.5)!important;
+}
+.wire-btn-beaver{
+	color:#A2846B!important;
+	border-color:#A2846B!important;
 }
 /* Link colour styles */
 
@@ -591,9 +698,16 @@ h3{
 	color:#ffffff!important;
 	border-color:#ffffff!important;
 }
+.icon-beaver{
+	color:#A2846B!important;
+	border-color:#A2846B!important;
+}
 
 /* Bloc image backgrounds */
 
+.bg-mountains{
+	background-image:url("img/mountains.jpg");
+}
 
 
 
@@ -776,7 +890,15 @@ h3{
 	.hero-text-vc, .mobile .hero-text-vc{
 	margin-top:10%;
 }
- }
+ div[class^="col-"], div[class*=" col-"]{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.full-width-bloc div[class^="col-"], .full-width-bloc div[class*=" col-"]{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+}
 /* Drop Down Navigation */
 @media (min-width: 767px) and (max-width: 768px){
 	
