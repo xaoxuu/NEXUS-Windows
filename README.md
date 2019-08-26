@@ -18,8 +18,8 @@ Windows 7~10
 
 ## 下载
 
-- 核心程序安装包： [NEXUS-setup.exe](https://github.com/xaoxuu/NEXUS/releases/download/v6.3/NEXUS-setup.exe)
-- 扩展包： [Extension20160207.exe](https://github.com/TitanStudio/NEXUS/releases/download/v6.2/Extension20160207.exe)
+- 核心程序安装包： [NEXUS-setup.exe](https://github.com/xaoxuu/NEXUS-Windows/releases/download/v6.3/NEXUS-setup.exe)
+- 扩展包： [Extension20160207.exe](https://github.com/xaoxuu/NEXUS-Windows/releases/download/v6.2/Extension20160207.exe)
 
 
 
